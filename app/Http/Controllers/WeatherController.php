@@ -9,7 +9,7 @@ class WeatherController extends Controller
 {
     public function getWeather(Request $request)
     {   
-        $apiKey = env('API_KEY');
+        $apiKey = env('WEATHER_API_KEY');
         $city = $request->input(
             'city', 'Tallinn'); // Default to Tallinn if city is not provided
         $url = "http://api.openweathermap.org/data/2.5/weather?q={$city}&units=metric&appid={$apiKey}";

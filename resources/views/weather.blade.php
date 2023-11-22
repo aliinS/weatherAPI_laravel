@@ -27,26 +27,6 @@
     @else
         <p>Error fetching weather information.</p>
     @endif
-    <br><br><br>
-    <h2>A nice little weather forcast widget for TALLINN city</h2>
-    <div id="openweathermap-widget-11"></div>
-    <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
-    <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = []; window.myWidgetParam.push(
-        {
-            id: 11,
-            cityid: '588409',
-            appid: '207c45c8b072945f9f900fd5ac8f0123',
-            units: 'metric',
-            containerid: 'openweathermap-widget-11',
-        });  
-        (function() {
-            var script = document.createElement('script');
-            script.async = true;
-            script.charset = "utf-8";
-            script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(script, s);
-        })();
-    </script>
+    
 </body>
 </html>
