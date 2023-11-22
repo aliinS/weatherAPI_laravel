@@ -3,14 +3,15 @@
 
 [ENG]
 
-<ul>Connect to an API ang fetch info
+
+Connect to an API ang fetch info
 
 Cache data
 
 Return info (if possible, with image)
 
 Exmpl:https://openweathermap.org/price
-</ul>
+
 
 
 [EST]
