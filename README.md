@@ -4,11 +4,11 @@
 [ENG]
 
 
-Connect to an API ang fetch info
+Connect to an API and fetch info.
 
-Cache data
+Cache data.
 
-Return info (if possible, with image)
+Return info (if possible, with image).
 
 Exmpl:https://openweathermap.org/price
 
@@ -16,11 +16,11 @@ Exmpl:https://openweathermap.org/price
 
 [EST]
 
-Ühendada API-ga ja saada info (näiteks formaat JSON)
+Ühendada API-ga ja saada info (näiteks formaat JSON).
 
-Andmed cache-ida
+Andmed cache-ida.
 
-Väljastada info (võimalusel koos pildiga)
+Väljastada info (võimalusel koos pildiga).
 
 Näiteks: https://openweathermap.org/price
 
