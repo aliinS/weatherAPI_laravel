@@ -11,13 +11,18 @@ class WeatherController extends Controller
     {   
         $apiKey = env('WEATHER_API_KEY');
         $city = $request->input(
-            'city', 'Tallinn'); // Default to Tallinn if city is not provided
+            'city', 'Tallinn'); // this is the default city ATM
         $url = "http://api.openweathermap.org/data/2.5/weather?q={$city}&units=metric&appid={$apiKey}";
 
         $response = Http::get($url);
 
-        $weatherData = $response->json();
-
-        return view('weather', ['weatherData' => $weatherData, 'city' => $city]);
+        // Check if the response is successful and contains weather data
+        if ($response->successful() && isset($response['cod']) && $response['cod'] === 200){
+            $weatherData = $response->json(); 
+            return view('weather', ['weatherData' => $weatherData, 'city' => $city]);
+        } else {
+            // If response does not contain weather data, return error view
+            return view('weather', ['city' => $city]);
+        }
     }
 }

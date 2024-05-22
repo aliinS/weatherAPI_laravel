@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
  //   return view('welcome');
 //});
 
-Route::get('/weather', [WeatherController::class, 'getWeather'])->name('weather');
+Route::get('/', [WeatherController::class, 'getWeather'])->name('weather');
+//Route::view('/error', 'weather.error')->name('weather.error');
